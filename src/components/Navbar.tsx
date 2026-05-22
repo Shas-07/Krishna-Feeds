@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, Phone, X } from 'lucide-react'
 import { useCallback, useEffect, useState, type MouseEvent } from 'react'
 import { BRAND, NAV_LINKS } from '../constants'
+import { Logo } from './Logo'
 import { scrollToSection } from '../utils/scroll'
 
 export function Navbar() {
@@ -88,13 +89,7 @@ export function Navbar() {
           className="flex items-center gap-3"
           onClick={(e) => handleNavClick(e, '#home')}
         >
-          <img
-            src="/assets/logo.png"
-            alt={`${BRAND.name} logo`}
-            className="h-11 w-11 rounded-full object-contain sm:h-12 sm:w-12"
-            width={48}
-            height={48}
-          />
+          <Logo size="sm" />
           <div className="hidden sm:block">
             <p className="text-sm font-bold tracking-wide text-primary-dark">{BRAND.name}</p>
             <p className="max-w-[200px] text-[10px] leading-tight text-muted">{BRAND.legalName}</p>
