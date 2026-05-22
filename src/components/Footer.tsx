@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from 'lucide-react'
 import { BRAND, NAV_LINKS } from '../constants'
+import { Logo } from './Logo'
 
 const social = [
   { icon: Facebook, label: 'Facebook', href: '#' },
@@ -17,13 +18,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <a href="#home" className="inline-flex items-center gap-3">
-              <img
-                src="/assets/logo.png"
-                alt={`${BRAND.name} logo`}
-                className="h-14 w-14 rounded-full bg-white/10 p-1"
-                width={56}
-                height={56}
-              />
+              <Logo size="foot" ringClassName="ring-white/20" />
               <div>
                 <p className="font-bold">{BRAND.name}</p>
                 <p className="text-xs text-white/70">{BRAND.legalName}</p>
