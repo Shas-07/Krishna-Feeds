@@ -99,15 +99,6 @@ export function Hero() {
               </p>
             </div>
           </div>
-
-          <motion.img
-            src="/assets/cattle.png"
-            alt="Healthy cattle"
-            className="absolute -bottom-6 -left-4 hidden h-40 w-auto drop-shadow-2xl lg:block xl:h-48"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
-          />
         </motion.div>
       </div>
 
