@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Logo } from './Logo'
 
 type Props = {
   onComplete: () => void
@@ -13,13 +14,13 @@ export function LoadingScreen({ onComplete }: Props) {
       transition={{ delay: 1.2, duration: 0.5 }}
       onAnimationComplete={onComplete}
     >
-      <motion.img
-        src="/assets/logo.png"
-        alt="Loading"
-        className="h-24 w-24"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.5 }}
+      <Logo
+        size="xl"
+        motionProps={{
+          initial: { scale: 0.8, opacity: 0 },
+          animate: { scale: 1, opacity: 1 },
+          transition: { duration: 0.5 },
+        }}
       />
       <motion.div
         className="mt-6 h-1 w-32 overflow-hidden rounded-full bg-primary-light"
