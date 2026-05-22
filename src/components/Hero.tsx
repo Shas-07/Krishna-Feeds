@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import { BRAND } from '../constants'
 import { LiveBackground } from './LiveBackground'
+import { Logo } from './Logo'
 import { HeroShapes } from './OrganicShapes'
 
 const CATEGORIES = ['Animal Feed', 'Poultry Feed']
@@ -22,15 +23,14 @@ export function Hero() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="text-center lg:text-left"
         >
-          <motion.img
-            src="/assets/logo.png"
-            alt={`${BRAND.name} logo`}
-            className="mx-auto h-28 w-28 object-contain sm:h-36 sm:w-36 lg:mx-0"
-            initial={{ scale: 0.85, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.15, duration: 0.5 }}
-            width={144}
-            height={144}
+          <Logo
+            size="lg"
+            className="mx-auto lg:mx-0"
+            motionProps={{
+              initial: { scale: 0.85, opacity: 0 },
+              animate: { scale: 1, opacity: 1 },
+              transition: { delay: 0.15, duration: 0.5 },
+            }}
           />
 
           <p className="mt-6 text-sm font-semibold tracking-[0.2em] text-gold uppercase">
