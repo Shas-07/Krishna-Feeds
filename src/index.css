@@ -15,6 +15,11 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id],
+footer {
+  scroll-margin-top: 5rem;
+}
+
 body {
   font-family: var(--font-body);
   color: #1f2937;
