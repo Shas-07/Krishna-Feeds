@@ -101,7 +101,7 @@ export function Footer() {
           <p>
             © {year} {BRAND.name} – {BRAND.legalName}. All rights reserved.
           </p>
-          <p>Formulated in India · Hulakoti, Gadag, Karnataka</p>
+          <p>Formulated in India · Hulkoti, Gadag, Karnataka</p>
         </div>
       </div>
     </footer>
