@@ -82,7 +82,7 @@ export function Contact() {
               allowFullScreen
             />
             <div className="flex flex-wrap items-center justify-between gap-3 border-t border-primary/10 bg-surface px-4 py-3 sm:px-5">
-              <p className="text-sm text-muted">KRISHNA FEEDS — Hulakoti, Gadag</p>
+              <p className="text-sm text-muted">KRISHNA FEEDS — Hulkoti, Gadag</p>
               <a
                 href={BRAND.mapsUrl}
                 target="_blank"
