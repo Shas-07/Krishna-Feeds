@@ -5,8 +5,8 @@ export const BRAND = {
   subtitle: 'Premium Animal & Poultry Feed Manufacturing',
   phone: '9353874971',
   email: 'hulkoticattlefeed.123@gmail.com',
-  location: 'Hulakoti-582205, Tq. Gadag',
-  locationDetail: 'Hulakoti, Gadag District · Karnataka, India',
+  location: 'Hulkoti-582205, Tq. Gadag',
+  locationDetail: 'Hulkoti, Gadag District · Karnataka, India',
   mapsUrl: 'https://maps.app.goo.gl/E9BEAaDutKtpHyPNA',
   mapsEmbedUrl:
     'https://www.google.com/maps?q=15.423869,75.555859&z=17&hl=en&output=embed',
