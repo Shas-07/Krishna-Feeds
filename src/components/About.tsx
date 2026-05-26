@@ -20,7 +20,7 @@ export function About() {
           <AnimatedSection>
             <div className="relative overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/assets/factory.png"
+                src="/assets/founder.png.jpeg"
                 alt="KRISHNA FEEDS manufacturing facility"
                 className="aspect-[4/3] w-full object-cover"
                 width={700}
